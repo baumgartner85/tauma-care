@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+    
+    <!-- Homepage -->
+    <url>
+        <loc>https://www.trauma-care.at/</loc>
+        <lastmod>2026-01-22</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+        <xhtml:link rel="alternate" hreflang="de" href="https://www.trauma-care.at/"/>
+        <xhtml:link rel="alternate" hreflang="en" href="https://www.trauma-care.at/?lang=en"/>
+    </url>
+    
+    <!-- Contact Page -->
+    <url>
+        <loc>https://www.trauma-care.at/kontakt.html</loc>
+        <lastmod>2026-01-22</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    
+    <!-- Impressum -->
+    <url>
+        <loc>https://www.trauma-care.at/impressum.html</loc>
+        <lastmod>2026-01-22</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    
+    <!-- Datenschutz -->
+    <url>
+        <loc>https://www.trauma-care.at/datenschutz.html</loc>
+        <lastmod>2026-01-22</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.3</priority>
+    </url>
+    
+</urlset>

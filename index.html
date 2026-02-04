@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trauma Care Saalfelden | Dr. med. Guntmar Gradl</title>
+    <meta name="description"
+        content="Spezialisten für Unfallchirurgie, Orthopädie und Sporttraumatologie in Saalfelden.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Feather Icons -->
+    <script src="https://unpkg.com/feather-icons"></script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <i data-feather="activity" style="color: var(--color-primary);"></i>
+                Trauma Care Saalfelden
+            </a>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#services" data-i18n="nav.services">Leistungen</a></li>
+                    <li><a href="#doctor" data-i18n="nav.doctor">Der Arzt</a></li>
+                    <li><a href="#clinic" data-i18n="nav.clinic">Klinik</a></li>
+                    <li><a href="#contact" class="btn btn-primary" style="padding: 0.6rem 1.2rem;"
+                            data-i18n="nav.contact">Kontakt</a></li>
+                    <li>
+                        <button onclick="toggleLanguage()" class="btn btn-secondary"
+                            style="padding: 0.5rem 0.8rem; font-size: 0.8rem; display: flex; align-items: center; gap: 4px;">
+                            <i data-feather="globe" style="width: 14px; height: 14px;"></i>
+                            <span>EN/DE</span>
+                        </button>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div style="margin-bottom: 1.5rem;">
+                <span data-i18n="hero.badge"
+                    style="background: rgba(2, 132, 199, 0.1); color: var(--color-primary); padding: 0.25rem 0.75rem; border-radius: 99px; font-size: 0.85rem; font-weight: 600;">
+                    Privatklinik Ritzensee
+                </span>
+            </div>
+            <h1 data-i18n="hero.title">Exzellente Medizin<br>im Pinzgau</h1>
+            <p class="lead" data-i18n="hero.subtitle">Dr. med. Guntmar Gradl und sein Team stehen für Spitzenmedizin in
+                der Unfallchirurgie und
+                Orthopädie.</p>
+            <div class="hero-actions">
+                <a href="#contact" class="btn btn-primary" data-i18n="hero.cta_primary">Termin vereinbaren</a>
+                <a href="#services" class="btn btn-secondary" data-i18n="hero.cta_secondary">Leistungen</a>
+            </div>
+
+            <div class="hero-info-cards">
+                <div class="info-badge">
+                    <i data-feather="clock" style="color: var(--color-primary); width: 18px;"></i>
+                    <span data-i18n="hero.badge_daily">Täglich für Sie da</span>
+                </div>
+                <div class="info-badge">
+                    <i data-feather="map-pin" style="color: var(--color-primary); width: 18px;"></i>
+                    <span data-i18n="hero.badge_location">Saalfelden am Steinernen Meer</span>
+                </div>
+                <div class="info-badge">
+                    <i data-feather="phone" style="color: var(--color-primary); width: 18px;"></i>
+                    <span data-i18n="hero.badge_emergency">Notfälle & Termin: 06582 794</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle" data-i18n="services.subtitle">Unser Angebot</span>
+                <h2 data-i18n="services.title">Medizinische Leistungen</h2>
+                <p style="color: var(--color-text-light); max-width: 600px; margin: 0 auto;"
+                    data-i18n="services.description">
+                    Umfassende Diagnostik und Therapie auf höchstem Niveau.
+                </p>
+            </div>
+            <div class="grid">
+                <div class="card">
+                    <i data-feather="activity" style="color: var(--color-primary); margin-bottom: 1rem;"></i>
+                    <h3 data-i18n="services.card_trauma_title">Unfallchirurgie</h3>
+                    <p data-i18n="services.card_trauma_text">Akutversorgung von Sport- und Freizeitunfällen. Schnelle
+                        Diagnose und Behandlung für eine rasche
+                        Rückkehr in den Alltag.</p>
+                </div>
+                <div class="card">
+                    <i data-feather="users" style="color: var(--color-primary); margin-bottom: 1rem;"></i>
+                    <h3 data-i18n="services.card_ortho_title">Orthopädie</h3>
+                    <p data-i18n="services.card_ortho_text">Konservative und operative Behandlung von
+                        Gelenksbeschwerden. Spezialisiert auf minimal-invasive
+                        Eingriffe.</p>
+                </div>
+                <div class="card">
+                    <i data-feather="layers" style="color: var(--color-primary); margin-bottom: 1rem;"></i>
+                    <h3 data-i18n="services.card_mri_title">MRI & Röntgen</h3>
+                    <p data-i18n="services.card_mri_text">Modernste bildgebende Diagnostik direkt vor Ort. Schnelle
+                        Termine und Befundung ohne lange
+                        Wartezeiten.</p>
+                </div>
+                <div class="card">
+                    <i data-feather="wifi" style="color: var(--color-primary); margin-bottom: 1rem;"></i>
+                    <h3 data-i18n="services.card_ultra_title">Ultraschall</h3>
+                    <p data-i18n="services.card_ultra_text">Hochauflösende Sonographie zur strahlenfreien Diagnostik von
+                        Weichteilen, Muskeln und Gelenken.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Doctor Section -->
+    <section id="doctor" class="split-section">
+        <div class="container split-container">
+            <div class="split-image portrait">
+                <img src="assets/images/dr-grandl.png" alt="Dr. med. Guntmar Gradl">
+            </div>
+            <div class="split-content">
+                <span class="section-subtitle" data-i18n="doctor.subtitle">Der Arzt</span>
+                <h2 data-i18n="doctor.title">Dr. med. Guntmar Gradl</h2>
+                <p data-i18n="doctor.text">Als erfahrener Facharzt für Unfallchirurgie und Orthopädie lege ich
+                    besonderen Wert auf eine
+                    persönliche Betreuung und maßgeschneiderte Therapiekonzepte. Mein Ziel ist es, Ihre Mobilität und
+                    Lebensqualität nachhaltig zu verbessern.</p>
+                <ul style="list-style: none; margin-bottom: 2rem; color: var(--color-text-light);">
+                    <li style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                        <i data-feather="check-circle" size="16" style="color: var(--color-primary);"></i>
+                        <span data-i18n="doctor.point1">Langjährige Erfahrung in der Sporttraumatologie</span>
+                    </li>
+                    <li style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                        <i data-feather="check-circle" size="16" style="color: var(--color-primary);"></i>
+                        <span data-i18n="doctor.point2">Spezialist für minimal-invasive Chirurgie</span>
+                    </li>
+                    <li style="margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem;">
+                        <i data-feather="check-circle" size="16" style="color: var(--color-primary);"></i>
+                        <span data-i18n="doctor.point3">Individuelle Rehabilitationsplanung</span>
+                    </li>
+                </ul>
+                <a href="#contact" class="btn btn-secondary" data-i18n="doctor.cta">Kontakt aufnehmen</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clinic Section -->
+    <section id="clinic" class="split-section" style="background-color: white;">
+        <div class="container split-container" style="direction: rtl;"> <!-- Visual flip -->
+            <div class="split-image" style="direction: ltr;">
+                <img src="assets/images/clinic-ritzensee.jpg" alt="Privatklinik Ritzensee Luftaufnahme">
+            </div>
+            <div class="split-content" style="direction: ltr;">
+                <span class="section-subtitle" data-i18n="clinic.subtitle">Privatklinik Ritzensee</span>
+                <h2 data-i18n="clinic.title">Trauma Care</h2>
+                <p data-i18n="clinic.text1">Die Privatklinik Ritzensee bietet als Teil von „Trauma Care“ ein umfassendes
+                    medizinisches
+                    Leistungsspektrum. Umgeben von der malerischen Kulisse der Pinzgauer Bergwelt schaffen wir die
+                    perfekten Rahmenbedingungen für Ihre Genesung.</p>
+                <p data-i18n="clinic.text2">National und international anerkannte Mediziner und modernste Ausstattung
+                    garantieren höchste
+                    Qualität in allen Bereichen.</p>
+                <a href="https://www.privatklinik-ritzensee.at/" target="_blank" class="btn btn-secondary"
+                    data-i18n="clinic.cta">Zur
+                    Klinik-Website</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="partners" style="padding: 6rem 0; background: #f1f5f9; text-align: center;">
+        <div class="container">
+            <h3 data-i18n="partners.title"
+                style="color: var(--color-primary); font-size: 0.9rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 3rem;">
+                In Kooperation mit
+            </h3>
+            <div style="display: flex; justify-content: center; align-items: center;">
+                <a href="https://www.doringer.at" target="_blank"
+                    style="transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1); display: inline-block; filter: grayscale(0%); opacity: 1;"
+                    onmouseover="this.style.transform='translateY(-5px)'"
+                    onmouseout="this.style.transform='translateY(0)'">
+                    <img src="assets/images/doringer-logo.png" alt="Radiologie Doringer"
+                        style="height: 70px; width: auto; object-fit: contain;">
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Footer -->
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4 data-i18n="footer.location_title">Trauma Care Saalfelden</h4>
+                    <p data-i18n="footer.location_line1">In der Privatklinik Ritzensee</p>
+                    <p data-i18n="footer.location_line2">Ritzenseestraße 25b<br>5760 Saalfelden am Steinernen Meer</p>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer.contact_title">Kontakt</h4>
+                    <p>Tel: <a href="tel:+436582794">+43 (0) 6582 794</a></p>
+                    <p>Email: <a href="mailto:info@trauma-care.at">info@trauma-care.at</a></p>
+                </div>
+                <div class="footer-col">
+                    <h4 data-i18n="footer.hours_title">Öffnungszeiten (Winter)</h4>
+                    <p data-i18n="footer.hours_mo_fr">Mo - Fr: 08:00 - 18:00 Uhr</p>
+                    <p data-i18n="footer.hours_so">So: 12:00 - 18:00 Uhr</p>
+                    <p data-i18n="footer.hours_sa_holiday">Samstag & Feiertags: nach Vereinbarung</p>
+                </div>
+            </div>
+            <div class="footer-bottom"
+                style="display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem;">
+                <p data-i18n="footer.copyright">&copy; 2026 Trauma Care Saalfelden. Alle Rechte vorbehalten.</p>
+                <div style="display: flex; gap: 1.5rem;">
+                    <a href="impressum.html" style="font-size: 0.9rem; color: var(--color-text-light);"
+                        data-i18n="footer.imprint">Impressum</a>
+                    <a href="#" style="font-size: 0.9rem; color: var(--color-text-light);"
+                        data-i18n="footer.privacy">Datenschutz</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        feather.replace();
+        // Simple language switcher for testing/demo purposes
+        function toggleLang() {
+            const current = localStorage.getItem('trauma-care-lang') || 'de';
+            const next = current === 'de' ? 'en' : 'de';
+            window.setLanguage(next);
+        }
+    </script>
+    <script src="js/i18n.js"></script>
+</body>
+
+</html>

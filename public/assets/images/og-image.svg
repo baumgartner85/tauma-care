@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#ffffff"/>
+  
+  <!-- Subtle gradient overlay -->
+  <rect width="1200" height="630" fill="url(#bgGradient)"/>
+  
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f0f9ff;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#e0f2fe;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Large decorative pulse in background -->
+  <polyline 
+    points="0,400 150,400 250,200 400,500 550,280 650,400 800,400" 
+    fill="none" 
+    stroke="#0284c7" 
+    stroke-width="8" 
+    stroke-linecap="round" 
+    stroke-linejoin="round"
+    opacity="0.1"
+    transform="translate(200, -50) scale(1.2)"
+  />
+  
+  <!-- Main content group - centered -->
+  <g transform="translate(600, 280)">
+    <!-- Pulse Icon -->
+    <polyline 
+      points="-280,0 -230,0 -200,-50 -150,50 -100,-30 -70,0 -20,0" 
+      fill="none" 
+      stroke="#0284c7" 
+      stroke-width="8" 
+      stroke-linecap="round" 
+      stroke-linejoin="round"
+    />
+    
+    <!-- Text: Trauma Care Saalfelden -->
+    <text x="20" y="12" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="52" font-weight="700" fill="#0f172a">
+      Trauma Care Saalfelden
+    </text>
+  </g>
+  
+  <!-- Tagline -->
+  <text x="600" y="380" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="28" fill="#64748b">
+    Dr. med. Guntmar Gradl | Unfallchirurgie &amp; Orthopädie
+  </text>
+  
+  <!-- Location badge -->
+  <g transform="translate(600, 450)">
+    <rect x="-180" y="-20" width="360" height="44" rx="22" fill="#0284c7" opacity="0.1"/>
+    <text x="0" y="8" text-anchor="middle" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" font-weight="500" fill="#0284c7">
+      📍 Privatklinik Ritzensee | Saalfelden
+    </text>
+  </g>
+  
+  <!-- Bottom accent line -->
+  <rect x="0" y="610" width="1200" height="20" fill="#0284c7"/>
+</svg>

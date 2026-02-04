@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <!-- Background circle (optional, for Apple Touch Icon) -->
+  <circle cx="256" cy="256" r="240" fill="white"/>
+  
+  <!-- Pulse/Heartbeat Line -->
+  <polyline 
+    points="32,256 128,256 176,96 256,416 336,160 384,256 480,256" 
+    fill="none" 
+    stroke="#0284c7" 
+    stroke-width="48" 
+    stroke-linecap="round" 
+    stroke-linejoin="round"
+  />
+</svg>

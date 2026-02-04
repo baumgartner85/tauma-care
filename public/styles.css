@@ -1,0 +1,426 @@
+/* Modern Reset & Base */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* Premium Medical Palette - Slate/Zinc inspired */
+    --color-bg: #ffffff;
+    --color-bg-alt: #f8fafc;
+    --color-text: #334155;
+    --color-text-light: #64748b;
+    --color-heading: #0f172a;
+
+    --color-primary: #0284c7;
+    /* Sky 600 - Trustworthy Blue */
+    --color-primary-dark: #0369a1;
+    --color-secondary: #0f172a;
+    /* Slate 900 */
+
+    --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+    --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+    --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+
+    --radius-md: 0.5rem;
+    --radius-lg: 0.75rem;
+    --radius-full: 9999px;
+
+    --font-sans: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    font-family: var(--font-sans);
+    color: var(--color-text);
+    background-color: var(--color-bg);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: var(--color-heading);
+    line-height: 1.2;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 3rem;
+    letter-spacing: -0.025em;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-size: 2.25rem;
+    letter-spacing: -0.025em;
+    margin-bottom: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.2s;
+}
+
+/* Utilities */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.75rem 1.5rem;
+    border-radius: var(--radius-full);
+    font-weight: 500;
+    transition: all 0.2s ease;
+    cursor: pointer;
+    border: none;
+    font-size: 1rem;
+}
+
+.btn-primary {
+    background-color: var(--color-primary);
+    color: white !important;
+    /* Force white text */
+}
+
+.btn-primary:hover {
+    background-color: var(--color-primary-dark);
+    transform: translateY(-1px);
+    box-shadow: var(--shadow-md);
+    color: white !important;
+}
+
+.btn-secondary {
+    background-color: white;
+    color: var(--color-heading);
+    border: 1px solid #e2e8f0;
+}
+
+.btn-secondary:hover {
+    background-color: var(--color-bg-alt);
+    border-color: #cbd5e1;
+    color: var(--color-heading);
+}
+
+/* Header & Nav */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(226, 232, 240, 0.8);
+    padding: 1rem 0;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: var(--color-heading);
+    letter-spacing: -0.02em;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    /* Ensure vertical alignment */
+    list-style: none;
+}
+
+.nav-links a {
+    color: var(--color-text-light);
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.nav-links a:not(.btn):hover {
+    color: var(--color-primary);
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    padding: 10rem 0 8rem;
+    background: radial-gradient(circle at top right, #e0f2fe 0%, transparent 40%),
+        radial-gradient(circle at bottom left, #f1f5f9 0%, transparent 40%),
+        #ffffff;
+    text-align: center;
+    overflow: hidden;
+}
+
+/* Decorative background graphic */
+.hero::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 800px;
+    height: 800px;
+    background: radial-gradient(circle, rgba(2, 132, 199, 0.05) 0%, transparent 70%);
+    border-radius: 50%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 1;
+}
+
+.hero h1 {
+    font-size: 4rem;
+    line-height: 1.1;
+    background: linear-gradient(135deg, var(--color-heading) 0%, #334155 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 1.5rem;
+}
+
+.hero p.lead {
+    font-size: 1.25rem;
+    color: var(--color-text-light);
+    max-width: 600px;
+    margin: 0 auto 2.5rem;
+    text-wrap: balance;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    margin-bottom: 3rem;
+}
+
+/* Info Cards in Hero */
+.hero-info-cards {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    flex-wrap: wrap;
+    margin-top: 3rem;
+}
+
+.info-badge {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    background: white;
+    padding: 0.75rem 1.25rem;
+    border-radius: var(--radius-full);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid #e2e8f0;
+    font-size: 0.9rem;
+    color: var(--color-text);
+}
+
+/* Status Bar - hidden/moved to hero optionally, but keeping styling valid */
+.status-bar {
+    background-color: var(--color-secondary);
+    color: white;
+    padding: 0.75rem 0;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 500;
+}
+
+/* Services Grid */
+.services {
+    padding: 6rem 0;
+    background: white;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.section-subtitle {
+    color: var(--color-primary);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5rem;
+    display: block;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background: white;
+    border: 1px solid #e2e8f0;
+    border-radius: var(--radius-lg);
+    padding: 2rem;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--color-primary);
+}
+
+.card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 0.75rem;
+}
+
+.card p {
+    color: var(--color-text-light);
+    font-size: 0.95rem;
+}
+
+/* Split Section (Doctor & Clinic) */
+.split-section {
+    padding: 6rem 0;
+    background-color: var(--color-bg-alt);
+    border-top: 1px solid #e2e8f0;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.split-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+}
+
+.split-content h2 {
+    margin-bottom: 1.5rem;
+}
+
+.split-content p {
+    margin-bottom: 1.5rem;
+    color: var(--color-text-light);
+}
+
+.split-image {
+    position: relative;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+    aspect-ratio: 4/3;
+}
+
+.split-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.split-image:hover img {
+    transform: scale(1.03);
+}
+
+.split-image.portrait {
+    aspect-ratio: 3/4;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+/* Contact / Footer */
+footer {
+    background-color: var(--color-secondary);
+    color: white;
+    padding: 4rem 0 2rem;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3rem;
+    margin-bottom: 4rem;
+}
+
+.footer-col h4 {
+    color: white;
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+}
+
+.footer-col p {
+    color: #94a3b8;
+    margin-bottom: 0.75rem;
+}
+
+.footer-col a {
+    color: #94a3b8;
+}
+
+.footer-col a:hover {
+    color: white;
+}
+
+.footer-bottom {
+    border-top: 1px solid #334155;
+    padding-top: 2rem;
+    text-align: center;
+    color: #64748b;
+    font-size: 0.875rem;
+}
+
+/* Mobile Media Queries */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    .nav-links {
+        display: none;
+        /* Simplification for now */
+    }
+
+    .split-container {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .split-section:nth-of-type(even) .split-container {
+        direction: rtl;
+        /* Flip order for stacking if needed, or flex-direction */
+    }
+
+    .split-section:nth-of-type(even) .split-content,
+    .split-section:nth-of-type(even) .split-image {
+        direction: ltr;
+    }
+}

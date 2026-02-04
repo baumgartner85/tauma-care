@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <!-- Pulse/Heartbeat Line -->
+  <polyline 
+    points="2,16 8,16 11,6 16,26 21,10 24,16 30,16" 
+    fill="none" 
+    stroke="#0284c7" 
+    stroke-width="3" 
+    stroke-linecap="round" 
+    stroke-linejoin="round"
+  />
+</svg>

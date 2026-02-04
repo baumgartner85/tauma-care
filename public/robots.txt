@@ -1,0 +1,14 @@
+# robots.txt for Trauma Care Saalfelden
+# https://www.trauma-care.at
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://www.trauma-care.at/sitemap.xml
+
+# Crawl-delay for respectful crawling
+Crawl-delay: 1
+
+# Disallow admin/private areas (none currently)
+# Disallow: /admin/

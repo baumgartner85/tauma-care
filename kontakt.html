@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Kontaktieren Sie das Trauma Care Saalfelden - Privatklinik Ritzensee. Terminvereinbarung für Unfallchirurgie, Orthopädie und privates MRT.">
+    <meta name="keywords" content="Kontakt, Trauma Care Saalfelden, Terminvereinbarung, Privatklinik Ritzensee">
+    <title>Kontakt | Trauma Care Saalfelden</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        .contact-hero {
+            min-height: 50vh;
+            padding-top: 140px;
+            padding-bottom: 60px;
+            background: var(--gradient-hero);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .contact-hero .hero-blob {
+            opacity: 0.15;
+        }
+
+        .contact-hero-content {
+            position: relative;
+            z-index: 10;
+            text-align: center;
+        }
+
+        .contact-page-content {
+            padding: var(--spacing-4xl) 0;
+            background: var(--color-bg-secondary);
+        }
+
+        .map-container {
+            margin-top: var(--spacing-3xl);
+            border-radius: var(--radius-xl);
+            overflow: hidden;
+            border: 1px solid var(--color-border);
+            aspect-ratio: 21/9;
+            background: var(--color-bg-card);
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
+            filter: grayscale(30%) brightness(0.9);
+        }
+
+        .emergency-banner {
+            background: linear-gradient(135deg, rgba(239, 68, 68, 0.1) 0%, rgba(220, 38, 38, 0.1) 100%);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+            border-radius: var(--radius-lg);
+            padding: var(--spacing-lg) var(--spacing-xl);
+            margin-bottom: var(--spacing-3xl);
+            display: flex;
+            align-items: center;
+            gap: var(--spacing-lg);
+        }
+
+        .emergency-icon {
+            font-size: 32px;
+        }
+
+        .emergency-text h4 {
+            color: #F87171;
+            margin-bottom: var(--spacing-xs);
+        }
+
+        .emergency-text p {
+            font-size: var(--font-size-sm);
+        }
+
+        .emergency-text a {
+            color: #F87171;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🏥</span>
+                <span>Trauma Care</span>
+            </a>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html#services" data-i18n="nav.services">Leistungen</a></li>
+                <li><a href="index.html#doctor" data-i18n="nav.doctor">Ihr Arzt</a></li>
+                <li><a href="index.html#clinic" data-i18n="nav.clinic">Klinik</a></li>
+                <li><a href="kontakt.html" class="active" data-i18n="nav.contact">Kontakt</a></li>
+                <li>
+                    <button onclick="toggleLanguage()" class="btn btn-secondary"
+                        style="padding: 0.5rem 0.8rem; font-size: 0.8rem; display: flex; align-items: center; gap: 4px;">
+                        <i data-feather="globe" style="width: 14px; height: 14px;"></i>
+                        <span>EN/DE</span>
+                    </button>
+                </li>
+            </ul>
+            <button class="mobile-menu-btn" id="mobile-menu-btn" aria-label="Menü öffnen">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Contact Hero -->
+    <section class="contact-hero">
+        <div class="hero-bg">
+            <div class="hero-blob hero-blob-1"></div>
+            <div class="hero-blob hero-blob-2"></div>
+        </div>
+        <div class="container contact-hero-content">
+            <span class="hero-badge" data-i18n="contact_page.badge_hero">Wir freuen uns auf Sie</span>
+            <h1 data-i18n="contact_page.title_hero">Kontakt</h1>
+            <p class="hero-subtitle" data-i18n="contact_page.subtitle_hero">
+                Vereinbaren Sie Ihren Termin oder stellen Sie uns Ihre Fragen
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact Content -->
+    <section class="contact-page-content">
+        <div class="container">
+            <!-- Emergency Banner -->
+            <div class="emergency-banner animate-on-scroll">
+                <span class="emergency-icon">🚨</span>
+                <div class="emergency-text">
+                    <h4 data-i18n="contact_page.emergency_title">Notfall?</h4>
+                    <p><span data-i18n="contact_page.emergency_text">Bei akuten Notfällen erreichen Sie uns 24/7
+                            unter</span> <a href="tel:+436542123456">+43 6542 123
+                            456</a></p>
+                </div>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info animate-on-scroll">
+                    <h3 data-i18n="contact_page.info_title">Kontaktinformationen</h3>
+
+                    <div class="contact-items">
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <div class="contact-text">
+                                <h4 data-i18n="contact_page.address_title">Adresse</h4>
+                                <p>
+                                    Trauma Care Saalfelden<br>
+                                    Privatklinik Ritzensee<br>
+                                    Ritzenseestraße 1<br>
+                                    5760 Saalfelden am Steinernen Meer<br>
+                                    Österreich
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">📞</div>
+                            <div class="contact-text">
+                                <h4 data-i18n="contact_page.phone_title">Telefon</h4>
+                                <p>
+                                    <span data-i18n="contact_page.phone_reception">Rezeption:</span> <a
+                                        href="tel:+436542123456">+43 6542 123 456</a><br>
+                                    <span data-i18n="contact_page.phone_mrt">MRT-Termine:</span> <a
+                                        href="tel:+436542123457">+43 6542 123 457</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">✉️</div>
+                            <div class="contact-text">
+                                <h4 data-i18n="contact_page.email_title">E-Mail</h4>
+                                <p>
+                                    <span data-i18n="contact_page.email_general">Allgemein:</span> <a
+                                        href="mailto:info@trauma-care-saalfelden.at">info@trauma-care-saalfelden.at</a><br>
+                                    <span data-i18n="contact_page.email_appointments">Termine:</span> <a
+                                        href="mailto:termin@trauma-care-saalfelden.at">termin@trauma-care-saalfelden.at</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 data-i18n="contact_page.hours_title">Öffnungszeiten</h3>
+                    <div class="hours-grid">
+                        <span class="hours-day" data-i18n="contact_page.day_mo">Montag</span>
+                        <span class="hours-time">08:00 - 18:00 Uhr</span>
+                        <span class="hours-day" data-i18n="contact_page.day_tu">Dienstag</span>
+                        <span class="hours-time">08:00 - 18:00 Uhr</span>
+                        <span class="hours-day" data-i18n="contact_page.day_we">Mittwoch</span>
+                        <span class="hours-time">08:00 - 18:00 Uhr</span>
+                        <span class="hours-day" data-i18n="contact_page.day_th">Donnerstag</span>
+                        <span class="hours-time">08:00 - 18:00 Uhr</span>
+                        <span class="hours-day" data-i18n="contact_page.day_fr">Freitag</span>
+                        <span class="hours-time">08:00 - 16:00 Uhr</span>
+                        <span class="hours-day" data-i18n="contact_page.day_sa">Samstag</span>
+                        <span class="hours-time">09:00 - 13:00 Uhr</span>
+                        <span class="hours-day" data-i18n="contact_page.day_su">Sonntag</span>
+                        <span class="hours-time" data-i18n="contact_page.closed">Geschlossen</span>
+                    </div>
+
+                    <h3 style="margin-top: var(--spacing-xl);" data-i18n="contact_page.directions_title">Anfahrt</h3>
+                    <p style="font-size: var(--font-size-sm); line-height: 1.8;">
+                        <strong data-i18n="contact_page.directions_car_title">Mit dem Auto:</strong><br>
+                        <span data-i18n="contact_page.directions_car_text">Von der A10 (Tauernautobahn) Ausfahrt
+                            Pongau/Bischofshofen, dann B311 Richtung Saalfelden.
+                            Kostenlose Parkplätze direkt vor der Klinik.</span><br><br>
+                        <strong data-i18n="contact_page.directions_train_title">Mit dem Zug:</strong><br>
+                        <span data-i18n="contact_page.directions_train_text">Bahnhof Saalfelden, dann 5 Minuten mit dem
+                            Taxi oder Bus (Linie 585).</span>
+                    </p>
+                </div>
+
+                <div class="contact-form-wrapper animate-on-scroll">
+                    <form class="contact-form" id="contact-form">
+                        <h3 data-i18n="contact_page.form_title">Nachricht senden</h3>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name" data-i18n="contact_page.form_name">Name *</label>
+                                <input type="text" id="name" name="name" placeholder="Ihr vollständiger Name" required
+                                    data-i18n="contact_page.form_name_placeholder">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="phone" data-i18n="contact_page.form_phone">Telefon</label>
+                                <input type="tel" id="phone" name="phone" placeholder="+43 ...">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email" data-i18n="contact_page.form_email">E-Mail *</label>
+                            <input type="email" id="email" name="email" placeholder="ihre@email.at" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject" data-i18n="contact_page.form_subject">Betreff</label>
+                            <select id="subject" name="subject">
+                                <option value="" data-i18n="contact_page.form_subject_default">Bitte wählen...</option>
+                                <option value="termin-unfallchirurgie" data-i18n="contact_page.form_subject_trauma">
+                                    Termin Unfallchirurgie</option>
+                                <option value="termin-orthopädie" data-i18n="contact_page.form_subject_ortho">Termin
+                                    Orthopädie</option>
+                                <option value="termin-mrt" data-i18n="contact_page.form_subject_mrt">Termin privates MRT
+                                </option>
+                                <option value="termin-röntgen" data-i18n="contact_page.form_subject_xray">Termin Röntgen
+                                </option>
+                                <option value="zweitmeinung" data-i18n="contact_page.form_subject_second">Zweitmeinung
+                                </option>
+                                <option value="beratung" data-i18n="contact_page.form_subject_consult">Allgemeine
+                                    Beratung</option>
+                                <option value="sonstiges" data-i18n="contact_page.form_subject_other">Sonstiges</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="preferred-date" data-i18n="contact_page.form_date">Wunschtermin</label>
+                            <input type="date" id="preferred-date" name="preferred-date">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" data-i18n="contact_page.form_message">Ihre Nachricht *</label>
+                            <textarea id="message" name="message" placeholder="Beschreiben Sie Ihr Anliegen..." required
+                                data-i18n="contact_page.form_message_placeholder"></textarea>
+                        </div>
+
+                        <div class="form-group" style="display: flex; align-items: flex-start; gap: var(--spacing-sm);">
+                            <input type="checkbox" id="privacy" name="privacy" required
+                                style="width: auto; margin-top: 4px;">
+                            <label for="privacy"
+                                style="font-size: var(--font-size-sm); color: var(--color-text-muted);">
+                                <span data-i18n="contact_page.form_privacy_prefix">Ich habe die</span> <a href="#"
+                                    data-i18n="contact_page.form_privacy_link">Datenschutzerklärung</a> <span
+                                    data-i18n="contact_page.form_privacy_suffix">gelesen und stimme der Verarbeitung
+                                    meiner Daten zu. *</span>
+                            </label>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;"
+                            data-i18n="contact_page.form_submit">
+                            Anfrage senden
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Map -->
+            <div class="map-container animate-on-scroll">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2699.5!2d12.85!3d47.42!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2sSaalfelden!5e0!3m2!1sde!2sat!4v1600000000000"
+                    allowfullscreen="" loading="lazy" title="Standort Trauma Care Saalfelden">
+                </iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <span class="logo-icon">🏥</span>
+                        <span>Trauma Care</span>
+                    </a>
+                    <p data-i18n="footer.copyright">Spitzenmedizin in den österreichischen Alpen. Ihr Partner für
+                        Unfallchirurgie und Orthopädie.</p>
+                </div>
+
+                <div class="footer-section">
+                    <h4 data-i18n="services.title">Leistungen</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#leistungen" data-i18n="services.card_trauma_title">Unfallchirurgie</a>
+                        </li>
+                        <li><a href="index.html#leistungen" data-i18n="services.card_ortho_title">Orthopädie</a></li>
+                        <li><a href="index.html#leistungen" data-i18n="services.card_mri_title">Privates MRT</a></li>
+                        <li><a href="index.html#leistungen" data-i18n="services.card_ultra_title">Digitales Röntgen</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 data-i18n="nav.clinic">Klinik</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html#arzt" data-i18n="nav.doctor">Dr. Grandl</a></li>
+                        <li><a href="index.html#klinik" data-i18n="nav.clinic">Über uns</a></li>
+                        <li><a href="kontakt.html" data-i18n="contact_page.directions_title">Anfahrt</a></li>
+                        <li><a href="kontakt.html" data-i18n="nav.contact">Kontakt</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-section">
+                    <h4 data-i18n="imprint.title">Rechtliches</h4>
+                    <ul class="footer-links">
+                        <li><a href="impressum.html" data-i18n="footer.imprint">Impressum</a></li>
+                        <li><a href="#" data-i18n="footer.privacy">Datenschutz</a></li>
+                        <li><a href="#">AGB</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p data-i18n="footer.copyright">&copy; 2026 Trauma Care Saalfelden. Alle Rechte vorbehalten.</p>
+                <div class="footer-legal">
+                    <a href="impressum.html" data-i18n="footer.imprint">Impressum</a>
+                    <a href="#" data-i18n="footer.privacy">Datenschutz</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+    <script src="js/i18n.js"></script>
+</body>
+
+</html>
